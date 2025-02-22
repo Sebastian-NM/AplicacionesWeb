@@ -1,1 +1,1 @@
-# AplicacionesWeb
+Este es el curso de desarrollo ágil de aplicaciones web, en el que espero aprender nuevas tecnologías!
