@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea Propiedades CSS</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        td:first-child {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>S02 - Tarea 03 - Propiedades CSS</h1>
+    <table>
+        <tr>
+            <th>Nombre de propiedad</th>
+            <th>Función</th>
+            <th>Posibles valores</th>
+        </tr>
+        <tr>
+            <td>display</td>
+            <td>Define cómo se muestra un elemento</td>
+            <td>
+                <ul>
+                    <li>block: ocupa todo el ancho disponible</li>
+                    <li>inline: ocupa solo el espacio necesario</li>
+                    <li>inline-block: como inline, pero permite definir tamaño</li>
+                    <li>flex: usa flexbox para disposición de elementos</li>
+                    <li>grid: usa un sistema de cuadrícula</li>
+                    <li>none: oculta el elemento</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>margin</td>
+            <td>Define el espacio exterior alrededor de un elemento</td>
+            <td>
+                <ul>
+                    <li>Valores en px: tamaño fijo en píxeles</li>
+                    <li>%: relativo al tamaño del contenedor</li>
+                    <li>auto: ajusta automáticamente</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>padding</td>
+            <td>Define el espacio interno entre el contenido y el borde</td>
+            <td>
+                <ul>
+                    <li>Valores en px: tamaño fijo en píxeles</li>
+                    <li>%: relativo al contenedor</li>
+                    <li>em: relativo al tamaño de fuente</li>
+                    <li>auto: ajusta automáticamente</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>border</td>
+            <td>Define el borde de un elemento</td>
+            <td>
+                <ul>
+                    <li>none: sin borde</li>
+                    <li>solid: línea continua</li>
+                    <li>dashed: línea discontinua</li>
+                    <li>dotted: puntos</li>
+                    <li>double: doble línea</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>text-align</td>
+            <td>Alinea el texto dentro de un elemento</td>
+            <td>
+                <ul>
+                    <li>left: alineado a la izquierda</li>
+                    <li>right: alineado a la derecha</li>
+                    <li>center: centrado</li>
+                    <li>justify: justificado</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>background-color</td>
+            <td>Define el color de fondo de un elemento</td>
+            <td>
+                <ul>
+                    <li>Colores en nombre: rojo, azul, etc.</li>
+                    <li>RGB: combinación de rojo, verde y azul</li>
+                    <li>HEX: código hexadecimal</li>
+                    <li>HSL: tono, saturación y luminosidad</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>cursor</td>
+            <td>Define el tipo de cursor al pasar sobre un elemento</td>
+            <td>
+                <ul>
+                    <li>pointer: mano indicando clic</li>
+                    <li>default: cursor por defecto</li>
+                    <li>text: cursor para seleccionar texto</li>
+                    <li>move: indica que el elemento es movible</li>
+                    <li>not-allowed: indica una acción prohibida</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
