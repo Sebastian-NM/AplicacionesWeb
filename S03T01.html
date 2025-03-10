@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 3 - Tarea 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tarea 1</h1>
+        <p><strong>Semana 3</strong></p>
+        <p><strong>Autor:</strong> Sebastián Navarro Martínez</p>
+    </header>
+
+    <main>
+        <section class="flexbox-section">
+            <h2>Características de <span>Display: Flex</span></h2>
+            <ul>
+                <li><strong>Modelo de diseño unidimensional:</strong> Se organiza en una sola dimensión (fila o columna).</li>
+                <li><strong>Ejes principales:</strong>
+                    <ul>
+                        <li><strong>Principal:</strong> Configurado con <code>flex-direction</code>.</li>
+                        <li><strong>Secundario:</strong> Perpendicular al principal, usado en alineación.</li>
+                    </ul>
+                </li>
+                <li><strong>Distribución del espacio:</strong> 
+                    <ul>
+                        <li>Control con <code>flex-grow</code>, <code>flex-shrink</code> y <code>flex-basis</code>.</li>
+                        <li>Alineación con <code>justify-content</code> y <code>align-items</code>.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p><strong>Ejemplo de uso:</strong></p>
+            <pre><code>
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+            </code></pre>
+        </section>
+
+        <section class="grid-section">
+            <h2>Características de <span>Display: Grid</span></h2>
+            <ul>
+                <li><strong>Modelo de diseño bidimensional:</strong> Permite organizar elementos en filas y columnas.</li>
+                <li><strong>Estructura:</strong>
+                    <ul>
+                        <li>Se definen filas y columnas con <code>grid-template-columns</code> y <code>grid-template-rows</code>.</li>
+                        <li>Se pueden definir áreas con <code>grid-template-areas</code>.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p><strong>Ejemplo de uso:</strong></p>
+            <pre><code>
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px auto 100px;
+    gap: 10px;
+}
+            </code></pre>
+        </section>
+
+        <section class="comparison-section">
+            <h2>Comparación entre <span>Flexbox</span> y <span>Grid</span></h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Flexbox</th>
+                        <th>Grid</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dimensión</td>
+                        <td>Unidimensional</td>
+                        <td>Bidimensional</td>
+                    </tr>
+                    <tr>
+                        <td>Estructura</td>
+                        <td>Organiza elementos en un solo eje</td>
+                        <td>Define un esquema con filas y columnas</td>
+                    </tr>
+                    <tr>
+                        <td>Alineación</td>
+                        <td>Usa <code>justify-content</code> y <code>align-items</code></td>
+                        <td>Usa <code>grid-template-columns</code>/<code>rows</code>, <code>grid-area</code></td>
+                    </tr>
+                    <tr>
+                        <td>Espaciado</td>
+                        <td>Depende de la distribución en un eje</td>
+                        <td><code>gap</code> permite un mejor control del espaciado</td>
+                    </tr>
+                    <tr>
+                        <td>Orden</td>
+                        <td>Se puede modificar con <code>order</code></td>
+                        <td>Se posiciona mediante <code>grid-column</code> y <code>grid-row</code></td>
+                    </tr>
+                    <tr>
+                        <td>Adaptabilidad</td>
+                        <td>Mejor para elementos dinámicos y flexibles</td>
+                        <td>Mejor para estructuras de diseño fijas o complejas</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="usage-section">
+            <h2>¿Cuándo usar <span>Flexbox</span> o <span>Grid</span>?</h2>
+            <div class="usage-container">
+                <div class="usage-box">
+                    <h3>Cuándo usar <span>Flexbox</span></h3>
+                    <ul>
+                        <li>Distribuir elementos en una sola dirección.</li>
+                        <li>Diseños ajustables, como menús y tarjetas.</li>
+                        <li>Alineación flexible y distribución eficiente.</li>
+                        <li>Ideal para componentes pequeños (botones, barras de herramientas).</li>
+                        <li>Altamente adaptable a distintas resoluciones.</li>
+                    </ul>
+                </div>
+    
+                <div class="usage-box">
+                    <h3>Cuándo usar <span>Grid</span></h3>
+                    <ul>
+                        <li>Organización en filas y columnas simultáneamente.</li>
+                        <li>Estructuras de diseño complejas.</li>
+                        <li>Distribución rígida y predefinida del contenido.</li>
+                        <li>Control preciso sobre el espaciado y alineación.</li>
+                        <li>Soporta solapamiento de elementos.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="naming-conventions-section">
+            <h2>Mejores Prácticas para el Nombramiento de Clases en CSS</h2>
+        
+            <p>El uso de una convención de nomenclatura en CSS ayuda a mantener el código limpio, modular y fácil de mantener. A continuación, se presentan algunas de las metodologías más populares junto con sus ventajas y desventajas.</p>
+        
+            <h3>Diferentes propuestas de nomenclatura CSS</h3>
+            <ul>
+                <li><strong>BEM (Block-Element-Modifier):</strong> Este enfoque divide los estilos en **Bloques**, **Elementos** y **Modificadores**. Se usa una estructura clara de nombres como <code>block__element--modifier</code>, lo que facilita la reutilización y escalabilidad del código.</li>
+                <li><strong>OOCSS (Object-Oriented CSS):</strong> Se basa en la idea de que los estilos deben ser reutilizables y modulares. Separa la estructura (cómo se agrupan los elementos) de la apariencia (colores, tamaños, etc.), lo que permite reducir la duplicación de código.</li>
+                <li><strong>SMACSS (Scalable and Modular Architecture for CSS):</strong> No es una convención estricta de nombres, sino una metodología que divide los estilos en **Base, Layout, Módulos y Estados**, organizando mejor los estilos y haciéndolos más fáciles de mantener.</li>
+                <li><strong>ITCSS (Inverted Triangle CSS):</strong> Se enfoca en organizar los estilos por niveles de especificidad, desde reglas generales hasta reglas específicas. Esto ayuda a evitar la sobreescritura innecesaria de estilos y mejora el rendimiento del CSS.</li>
+            </ul>
+        
+            <h3>Comparación entre metodologías</h3>
+            <p>La siguiente tabla muestra una comparación entre las metodologías de nomenclatura CSS más utilizadas, detallando sus características principales, ventajas y desventajas.</p>
+        
+            <table>
+                <thead>
+                    <tr>
+                        <th>Metodología</th>
+                        <th>Descripción</th>
+                        <th>Ventajas</th>
+                        <th>Desventajas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>BEM</strong></td>
+                        <td>Divide los estilos en Bloques, Elementos y Modificadores para mayor claridad.</td>
+                        <td>Alta reutilización, nombres claros, fácil de escalar.</td>
+                        <td>Los nombres pueden ser largos y repetitivos.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>OOCSS</strong></td>
+                        <td>Separa la estructura de la apariencia, reutilizando estilos comunes.</td>
+                        <td>CSS modular y eficiente, evita código duplicado.</td>
+                        <td>Puede generar más clases en el HTML, dificultando su mantenimiento.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SMACSS</strong></td>
+                        <td>Divide el CSS en categorías para modularidad y escalabilidad.</td>
+                        <td>Organización clara y separación de responsabilidades.</td>
+                        <td>No define una convención estricta para los nombres de clases.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ITCSS</strong></td>
+                        <td>Ordena los estilos de lo más general a lo más específico.</td>
+                        <td>Facilita el mantenimiento y minimiza la sobreescritura de estilos.</td>
+                        <td>Requiere mayor planificación inicial y disciplina en su implementación.</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <h3>Recomendaciones Generales</h3>
+            <ul>
+                <li>Usar nombres de clases **claros y descriptivos**.</li>
+                <li>Evitar nombres genéricos como <code>.box</code> o <code>.container</code>.</li>
+                <li>Preferir nombres en **inglés** y en formato **kebab-case** (<code>.main-header</code> en lugar de <code>.mainHeader</code>).</li>
+                <li>Organizar el CSS siguiendo una metodología para facilitar su mantenimiento.</li>
+            </ul>
+        </section>
+        
+    </main>
+</body>
+</html>
