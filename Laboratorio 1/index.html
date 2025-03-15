@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laboratorio 1</title>
-    
-    <!-- Estilos de Reveal.js -->
+
+    <!-- Estilos de Reveal.js para presentación interactiva -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reset.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/beige.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/beige.min.css">
 
-    <!-- Materialize CSS -->
+    <!-- Materialize CSS para estilos de interfaz moderna -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    
+
+
+    <!-- Archivo de estilos personalizados -->
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
+<body>
+    <!-- Contenedor principal para la presentación con Reveal.js -->
     <div class="reveal">
         <div class="slides">
 
             <!-- Diapositiva de Título -->
             <section>
-                <img src="https://static-00.iconduck.com/assets.00/materialize-icon-512x262-ssd85h8z.png" alt="Logo de Materialize">
+                <img src="https://static-00.iconduck.com/assets.00/materialize-icon-512x262-ssd85h8z.png"
+                    alt="Logo de Materialize">
                 <h1 class="section__title">Materialize</h1>
-                <p class="section__subtitle section__subtitle--medium">Sebastián Navarro - Amanda Chaves</p>
+                <p class="section__subtitle">Sebastián Navarro - Amanda Chaves</p>
             </section>
 
-            <!-- Diapositiva con una lista -->
+
+
+
+            <!-- Diapositiva de Agenda -->
             <section>
                 <h2 class="section__title">Agenda</h2>
                 <ul class="section__list">
@@ -39,84 +47,109 @@
                 </ul>
             </section>
 
-            <!-- Información Básica -->
+
+
+
+            <!-- Diapositiva de Información básica de Materialize -->
             <section>
                 <h2 class="section__title">Información básica de Materialize</h2>
 
-                <section>
-                    <div class="info">
-                        <h3 class="info__title">Origen</h3>
-                        <p class="info__text">Es un framework basado en Material Design desarrollado por Google y popularizado en 2014.</p>
-                        <img class="info__image" src="/Laboratorio 1/chang.jpeg" alt="Ejemplo de Material Design">
-                    </div>
+                <!-- Subsección: Origen de Materialize -->
+                <section class="info">
+                    <h3 class="info__title">Origen</h3>
+                    <p class="info__text">Es un framework basado en Material Design desarrollado por Google y
+                        popularizado en 2014.</p>
+                    <img class="info__image" src="/Laboratorio 1/images/chang.jpeg" alt="Ejemplo de Material Design">
                 </section>
 
-                <section>
+                <!-- Subsección: Fecha de Publicación -->
+                <section class="info">
                     <h3 class="info__title">Fecha de Publicación</h3>
-                    <p class="info__text">Materialize fue lanzado en 2014 y su última versión estable es la 1.0.0 (2018).</p>
-                    <img class="info__image" src="/Laboratorio 1/release-date.png" alt="Fecha de lanzamiento">
+                    <p class="info__text">Materialize fue lanzado en 2014 y su última versión estable es la 1.0.0
+                        (2018).</p>
+                    <img class="info__image" src="/Laboratorio 1/images/release-date.png" alt="Fecha de lanzamiento">
                 </section>
 
-                <section>
+                <!-- Subsección: Enlace a GitHub -->
+                <section class="info">
                     <h3 class="info__title">Enlace a GitHub</h3>
-                    <p><a href="https://github.com/Dogfalo/materialize"><img class="info__image" src="https://pngimg.com/d/github_PNG65.png" alt="GitHub"></a></p>
+                    <a href="https://github.com/Dogfalo/materialize">
+                        <img class="info__image" src="https://pngimg.com/d/github_PNG65.png" alt="GitHub">
+                    </a>
                 </section>
 
-                <section>
+                <!-- Subsección: Estrellas -->
+                <section class="info">
+                    <h3 class="info__title">Estrellas en GitHub</h3>
+                    <p class="text-center">¡Materialize cuenta con casi 39000⭐!</p>
+                    <img class="info__image" src="images/estrellasMaterialize.png" alt="Estrellas de Materialize">
+                </section>
+
+                <!-- Subsección: Dato Curioso -->
+                <section class="info">
                     <h3 class="info__title">Dato Curioso</h3>
-                    <p class="info__text">Materialize fue una de las primeras bibliotecas en implementar un sistema de grid responsivo basado en flexbox.</p>
-                    <img class="info__image" src="/Laboratorio 1/flexbox.jpg" alt="Flexbox">
+                    <p class="info__text">Materialize fue una de las primeras bibliotecas en implementar un sistema de
+                        grid responsivo basado en flexbox.</p>
+                    <img class="info__image" src="/Laboratorio 1/images/flexbox.jpg" alt="Flexbox">
                 </section>
             </section>
 
-            <!-- Casos de Uso -->
+
+
+
+            <!-- Sección: Casos de Uso -->
             <section>
                 <h2 class="section__title">Casos de Uso de Materialize</h2>
 
                 <section>
-                    <h3 class="use-case__title">1. Portales Educativos</h3>
-                    <p class="use-case__text">Materialize es utilizado en plataformas educativas gracias a su diseño responsivo y adaptable.</p>
+                    <h3 class="info__title">1. Portales Educativos</h3>
+                    <p class="text-justify">Materialize es utilizado en plataformas educativas gracias a su diseño
+                        responsivo y adaptable.</p>
                 </section>
 
                 <section>
-                    <h3 class="use-case__title">2. Startups y Landing Pages</h3>
-                    <p class="use-case__text">Las startups lo usan para desarrollar sitios web modernos con efectos visuales atractivos y tiempos de carga optimizados.</p>
+                    <h3 class="info__title">2. Startups y Landing Pages</h3>
+                    <p class="text-justify">Las startups lo usan para desarrollar sitios web modernos con efectos
+                        visuales atractivos y
+                        tiempos de carga optimizados.</p>
                 </section>
 
                 <section>
-                    <h3 class="use-case__title">3. Paneles de Administración</h3>
-                    <p class="use-case__text">Ideal para dashboards con gráficos, tablas interactivas y menús laterales plegables.</p>
+                    <h3 class="info__title">3. Paneles de Administración</h3>
+                    <p class="text-justify">Ideal para dashboards con gráficos, tablas interactivas y menús laterales
+                        plegables.</p>
                 </section>
 
                 <section>
-                    <h3 class="use-case__title">4. E-commerce</h3>
-                    <p class="use-case__text">Materialize permite organizar productos en tiendas online de forma atractiva y optimizada.</p>
+                    <h3 class="info__title">4. E-commerce</h3>
+                    <p class="text-justify">Materialize permite organizar productos en tiendas online de forma atractiva
+                        y optimizada.</p>
                 </section>
 
                 <section>
-                    <h3 class="use-case__title">-Imágenes de ejemplo-</h3>
+                    <h3 class="info__title">-Imágenes de ejemplo-</h3>
                     <div class="slider">
                         <ul class="slides">
                             <li>
-                                <img src="/Laboratorio 1/ejemplo A.png" alt="Ejemplo A">
+                                <img src="/Laboratorio 1/images/ejemplo A.png" alt="Ejemplo A">
                                 <div class="caption left-align">
                                     <p>Landpage</p>
                                 </div>
                             </li>
                             <li>
-                                <img src="/Laboratorio 1/ejemplo B.png" alt="Ejemplo B">
+                                <img src="/Laboratorio 1/images/ejemplo B.png" alt="Ejemplo B">
                                 <div class="caption left-align">
                                     <p>Paneles de Administración</p>
                                 </div>
                             </li>
                             <li>
-                                <img src="/Laboratorio 1/Ejemplo C.jpg" alt="Ejemplo C">
+                                <img src="/Laboratorio 1/images/Ejemplo C.jpg" alt="Ejemplo C">
                                 <div class="caption left-align">
                                     <p>Panel educativo</p>
                                 </div>
                             </li>
                             <li>
-                                <img src="/Laboratorio 1/Ejemplo D.png" alt="Ejemplo D">
+                                <img src="/Laboratorio 1/images/Ejemplo D.png" alt="Ejemplo D">
                                 <div class="caption left-align">
                                     <p>Plataforma de e-commerce</p>
                                 </div>
@@ -126,30 +159,179 @@
                 </section>
             </section>
 
+
+
+
+            <!-- Pasos de Instalación -->
+            <section>
+                <h2 class="section__title">Pasos para la instalación</h2>
+                <!-- Contenido pendiente de agregar -->
+            </section>
+
+
+
+
+            <!-- Componentes Principales -->
+            <section>
+                <h2 class="section__title">Componentes</h2>
+
+                <!-- GRID SYSTEM -->
+                <section>
+                    <div class="div--codigo">
+                        <h2 class="section--title">Grid System (Sistema de rejilla)</h2>
+
+                        <div class="code-container">
+                            <div class="code-display">
+                                <div class="row">
+                                    <div class="col s12 card-panel teal lighten-2 text-sm">
+                                        Este div tiene 12 columnas de ancho en todos los tamaños de pantalla
+                                    </div>
+                                    <div class="col s6 card-panel teal lighten-2 text-sm">6 columnas (mitad)</div>
+                                    <div class="col s6 card-panel teal lighten-2 text-sm">6 columnas (mitad)</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="frame--gist">
+                            <iframe class="iframe--gist"
+                                src="https://gist.github.com/Sebastian-NM/ff411d527dcb59d4cdf5bb4a3ae76d28.pibb">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+
+                
+                <!-- BOTON-->
+                <section>
+                    <div class="div--codigo">
+                        <h2 class="section--title">Botón</h2>
+
+                        <div class="button-container code-display">
+                            <a class="waves-effect waves-light btn">Estos</a>
+                            <a class="waves-effect waves-light btn">Son</a>
+                            <a class="waves-effect waves-light btn">Botones</a>
+                        </div>
+
+                        <div class="frame--gist">
+                            <iframe class="iframe--gist"
+                                src="https://gist.github.com/Sebastian-NM/308075e2682fec6b2b1c8262dfb25ebe.pibb">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- NAV BAR -->
+                <section>
+                    <div class="div--codigo">
+                        <h2 class="section--title">Nav Bar</h2>
+
+                        <nav>
+                            <div class="nav-wrapper">
+                                <a href="javascript:alert('¿Quién te dio permiso para hacer clic?');"
+                                    class="brand-logo">Logo</a>
+                                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                    <li><a href="javascript:alert('¿Quién te dio permiso para hacer clic?');">Inicio</a>
+                                    </li>
+                                    <li><a href="javascript:alert('¿Quién te dio permiso para hacer clic?');">Sobre
+                                            mi</a></li>
+                                    <li><a
+                                            href="javascript:alert('¿Quién te dio permiso para hacer clic?');">Contacto</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+
+                        <div class="frame--gist">
+                            <iframe class="iframe--gist"
+                                src="https://gist.github.com/Sebastian-NM/b7482d817b113c534ece063454f4a856.pibb">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- INPUT -->
+                <section>
+                    <div class="div--codigo">
+                        <h2 class="section--title">Input</h2>
+
+                        <div class="row">
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="email" type="email" class="validate">
+                                        <label for="email">Email</label>
+                                        <span class="helper-text" data-error="wrong" data-success="right">Helper
+                                            text</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="frame--gist">
+                            <iframe class="iframe--gist"
+                                src="https://gist.github.com/Sebastian-NM/119bcdb657acd6387f46664a29586b12.pibb">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- COLECCIÓN -->
+                <section>
+                    <div class="div--codigo">
+                        <h2 class="section--title">Collection</h2>
+
+                        <ul class="collection">
+                            <li class="collection-item"><span class="badge">Hoy</span> Comprar víveres</li>
+                            <li class="collection-item"><span class="badge">Mañana</span> Revisar correos importantes
+                            </li>
+                            <li class="collection-item"><span class="badge">Próxima semana</span> Asistir a reunión de
+                                equipo</li>
+                            <li class="collection-item"><span class="badge">Pendiente</span> Terminar informe mensual
+                            </li>
+                        </ul>
+
+                        <div class="frame--gist">
+                            <iframe class="iframe--gist"
+                                src="https://gist.github.com/Sebastian-NM/744fb653aafafa44bee97fc6afb0fc80.pibb">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Diapositiva de Ventajas y Desventajas -->
+            <section>
+                <h2 class="section__title">Ventajas y Desventajas</h2>
+                <!-- Contenido pendiente de agregar -->
+            </section>
+
         </div>
     </div>
 
-    <!-- JavaScript de Materialize -->
+    <!-- Inclusión de librerías externas -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Inicializar el slider de Materialize
             var sliders = document.querySelectorAll('.slider');
             M.Slider.init(sliders, {
-                indicators: true, // Mostrar puntos de navegación
-                height: 400, // Altura del slider
-                duration: 500, // Duración de transición
-                interval: 3000 // Cambio automático cada 3 segundos
+                indicators: true,
+                height: 400,
+                duration: 500,
+                interval: 3000
             });
 
-            // Inicializar Reveal.js
+            // Inicializar Reveal.js para la presentación
             Reveal.initialize();
         });
     </script>
 
-    <!-- JavaScript de Reveal.js -->
+    <!-- JavaScript de Reveal.js para las diapositivas -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
 </body>
+
 </html>
