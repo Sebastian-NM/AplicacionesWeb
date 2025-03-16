@@ -1,35 +1,40 @@
+
 /* ----------------------- /
-/         PORTADA          /
+/         GENERAL          /
 / ----------------------- */
 
-/* Estilos generales para títulos principales en diapositivas */
-.section__title {
-    font-size: 2.5em;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 100px;
+.reveal {
+    background-color: #cfcfcf;
 }
 
-/* Subtítulos con diferentes tamaños */
+section h2.section__title {
+    text-align: center;
+    color: #df7a82;
+    font-size: 2em;
+}
+
+section h1.section__title {
+    text-align: center;
+    color: #535353;
+}
+
 .section__subtitle {
-    font-size: 1.4em;
+    font-size: 0.8em;
     text-align: center;
-    margin-bottom: 10px;
-    color: #555;
+    margin: 0px;
+    color: #df7a82;
 }
 
-/* ----------------------- /
-/       LISTAS            /
-/ ----------------------- */
+/* --------------------- /
+/       AGENDA           /
+/ --------------------- */
 
 /* Contenedor de listas para estructurar contenido */
 .section__list {
-    font-size: 0.7em;
-    list-style: none;
-    padding: 0;
+    font-size: 0.8em;
     text-align: left;
-    margin: 15px auto;
-    width: 80%;
+    margin: 15px;
+    width: 100%;
 }
 
 /* Estilos para elementos de lista con efecto hover */
@@ -41,17 +46,18 @@
 }
 
 .section__list-item:hover {
-    background-color: #e0e0e0;
+    background-color: #df7a82;
 }
 
 /* ----------------------- /
-/  BLOQUES DE INFORMACIÓN /
+/    INFORMACIÓN BÁSICA    /
 / ----------------------- */
 
 /* Contenedor general de los bloques de información */
 .info {
     text-align: center;
-    margin: 20px auto;
+    margin: 20px;
+    color: #535353;
     width: 85%;
 }
 
@@ -59,14 +65,14 @@
 .info__title {
     font-size: 1.5em;
     font-weight: bold;
-    color: #222;
+    color: #535353;
     margin-bottom: 10px;
 }
 
 /* Párrafos de texto dentro de bloques de información */
 .info__text {
     font-size: 0.6em;
-    text-align: justify;
+    text-align: center;
     line-height: 1.5;
     color: #444;
     margin-bottom: 15px;
@@ -101,32 +107,188 @@
 / ---------------------- */
 
 .code--size {
-    font-size: 14px;
-    /* Ajusta el tamaño del texto */
+    font-size: 10px;
 }
 
 .section--title {
-    font-size: 0.5em;
+    font-size: 0.2em;
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.div--gist {
-    width: 100%;
-    max-width: 1200px;
-    height: 180px;
+h2.section--title {
+    font-size: 60px; /* Ajusta el tamaño de fuente como lo necesites */
 }
 
-.iframe--gist {
-    width: 100%;
-    height: 100%;
-    border: none;
+/* ----------------- /
+/    COLLECTION      /
+/ ----------------- */
+
+/* Cambiar el tamaño de fuente de la colección */
+.collection {
+    font-size: 16px; /* Ajusta el tamaño de la fuente según lo necesites */
 }
 
-.div--codigo {
+/* ------------------ /
+/     TARJETA        /
+/ ----------------- */
+
+.card {
+    background-color: #df7a82;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.card-content {
+    background-color: #cfcfcf;
+    color: #535353;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #535353;
+}
+
+.card-content p {
+    font-size: 14px;
+}
+
+.card-action {
+    background-color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+.card-action a {
+    color: white !important;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+/* ------------ /
+/    FOOTER    /
+/ ----------- */
+
+/* Ajuste del tamaño de fuente en el footer */
+.page-footer .container {
+    font-size: 16px; /* Tamaño general del texto */
+}
+
+.page-footer h5 {
+    font-size: 22px; /* Tamaño de los títulos dentro del footer */
+}
+
+.page-footer p, .page-footer a {
+    font-size: 14px; /* Tamaño del texto en párrafos y enlaces */
+}
+
+/* Alineación del contenido a la izquierda */
+.page-footer .container {
+    text-align: left;
+}
+
+/* Alineación de los enlaces y la copyright */
+.page-footer .footer-copyright {
+    text-align: left;
+}
+
+.page-footer .footer-copyright span {
+    font-size: 14px; /* Ajustar el tamaño de la copyright */
+}
+
+.page-footer .footer-copyright a {
+    font-size: 14px; /* Ajustar el tamaño del enlace 'More Links' */
+    text-align: left;
+}
+
+
+/* ---------------- /
+/    BREADCRUMBS    /
+/ --------------- */
+
+.nav-wrapper .col.s12 {
+    text-align: left;
+}
+
+.nav-wrapper .breadcrumb {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+
+/* ---------------- /
+/   RADIO BUTTONS   /
+/ --------------- */
+.radio-form {
     display: flex;
-    flex-direction: column;
-    gap: 15px; 
-    align-items: stretch;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.checkboxes-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* ---------------- /
+/     TABLA        /
+/ --------------- */
+
+.comparative-table {
+    width: 100%;
+    font-size: 17px;
+    table-layout: auto;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.comparative-table th, .comparative-table td {
+    border: 1px solid #333333;
+    padding: 12px 15px;
+    text-align: left;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.comparative-table th {
+    background-color: #df7a82;
+    color: #333333;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.comparative-table .ventaja {
+    background-color: #f5b8bd;
+    color: #333333;
+    font-weight: bold;
+}
+
+.comparative-table .desventaja {
+    background-color: #f5b8bd;
+    color: #333333;
+}
+
+.comparative-table tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+.comparative-table td:first-child {
+    font-weight: bold;
+    background-color: #bbbbbb;
+}
+
+.comparative-table tr.selected {
+    background-color: #df7a82;
+    color: white;
 }
